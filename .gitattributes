@@ -1,0 +1,2 @@
+'SchoolLifev2/' filter=lfs diff=lfs merge=lfs -text
+SchoolLifev2/ filter=lfs diff=lfs merge=lfs -text
