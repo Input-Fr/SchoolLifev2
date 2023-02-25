@@ -1,31 +1,3 @@
-using System;
-
-namespace Unity.Burst.CompilerServices
-{
-    /// <summary>
-    /// Can be used to specify that a parameter or return has a range assumption.
-    /// Assumptions feed directly into the optimizer and allow better codegen.
-    ///
-    /// Only usable on values of type scalar integer.
-    ///
-    /// The range is a closed interval [min..max] - EG. the attributed value
-    /// is greater-than-or-equal-to min and less-than-or-equal-to max.
-    /// </summary>
-    [AttributeUsage(AttributeTargets.ReturnValue | AttributeTargets.Parameter)]
-    public class AssumeRangeAttribute : Attribute
-    {
-        /// <summary>
-        /// Assume that an integer is in the signed closed interval [min..max].
-        /// </summary>
-        /// <param name="min">The inclusive minimum value.</param>
-        /// <param name="max">The inclusive maximum value.</param>
-        public AssumeRangeAttribute(long min, long max) { }
-
-        /// <summary>
-        /// Assume that an integer is in the unsigned closed interval [min..max].
-        /// </summary>
-        /// <param name="min">The inclusive minimum value.</param>
-        /// <param name="max">The inclusive maximum value.</param>
-        public AssumeRangeAttribute(ulong min, ulong max) { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d913ca59697de503855f07e3baf7c861bdaa43759ba3aa03b3df5f51b16cedf1
+size 1290

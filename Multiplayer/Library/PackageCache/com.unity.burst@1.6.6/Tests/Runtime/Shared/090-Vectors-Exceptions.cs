@@ -1,25 +1,3 @@
-using System;
-using Unity.Burst;
-using Unity.Mathematics;
-
-namespace Burst.Compiler.IL.Tests
-{
-    internal partial class VectorsExceptions
-    {
-        [TestCompiler(1.0f, ExpectedDiagnosticId = DiagnosticId.WRN_ExceptionThrownInNonSafetyCheckGuardedFunction)]
-        public static float Float4WithException(float a)
-        {
-            return GetFloat4(a).x;
-        }
-
-        private static float4 GetFloat4(float value)
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException();
-                // Here the generated code should have a burst.abort + a return zero float4 (SIMD type)
-            }
-            return new float4(value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:57257baea7d63779297babcfaca1ab7d57a4e1b31483d3e1f1af90525d6e3c94
+size 724

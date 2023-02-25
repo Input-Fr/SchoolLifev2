@@ -1,30 +1,3 @@
-using Burst.Compiler.IL.Tests.Helpers;
-using Unity.Mathematics;
-
-namespace Burst.Compiler.IL.Tests
-{
-    internal partial class VectorsBools
-    {
-        // ---------------------------------------------------
-        // ! operator
-        // ---------------------------------------------------
-
-        [TestCompiler(DataRange.Standard)]
-        public static int Bool4Not(ref bool4 a)
-        {
-            return Vectors.ConvertToInt(!a);
-        }
-
-        [TestCompiler(DataRange.Standard)]
-        public static int Bool3Not(ref bool3 a)
-        {
-            return Vectors.ConvertToInt(!a);
-        }
-
-        [TestCompiler(DataRange.Standard)]
-        public static int Bool2Not(ref bool2 a)
-        {
-            return Vectors.ConvertToInt(!a);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed0c6ddf7501a3a221cd564a0a213fe9e9536adf244d2d836eef64ccc16b67f4
+size 802

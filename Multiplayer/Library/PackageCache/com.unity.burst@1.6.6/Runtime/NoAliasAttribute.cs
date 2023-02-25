@@ -1,12 +1,3 @@
-using System;
-
-namespace Unity.Burst
-{
-    /// <summary>
-    /// Can be used to specify that a parameter to a function, a field of a struct, a struct, or a function return will not alias. (Advanced - see User Manual for a description of Aliasing).
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.Field | AttributeTargets.Struct | AttributeTargets.ReturnValue)]
-    public class NoAliasAttribute : Attribute
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:25346b1e6e2d581cdbd2f56840e0ad8232ec59dcc7b21ba5630909470b141ae3
+size 470
