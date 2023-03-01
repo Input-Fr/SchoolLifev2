@@ -1,0 +1,31 @@
+Si vous voulez importer un professor dans votre projet unity, vous pouvez le retrouver dans le dossier : "SchoolLifev2/AI/Assets/Prefab/Professor".
+Mais n'oubliez pas de mettre votre personnage principale dans la variable "Player" du Professor.
+
+
+Le professeur se déplace soit vers une position aléatoire, soit vers un des coins de la map.
+Lorsque on est dans la "zone noir" du professeur, il nous a attraper, dans le jeu on aura donc perdu.
+
+Les variables des professeurs:
+
+- Player :  le joueur principal que le professeur cherche à attraper s'il le voit.
+- Agent : le NavMesh Agent du professeur, pour qu'on puisse contrôler ses mouvements.
+- Target : il faut que le joueur aie le Layer "Targets".
+- Obstacles : il faut que les obstacles / l'environnement aient le Layer "Obstacles".
+
+- Walk Speed : vitesse de marche du professeur quand il se balade.
+- Chase Speed : vitesse du professeur lorsqu'il nous poursuit.
+
+- Walk View Radius : distance à laquelle le professeur voit lorsqu'il marche.
+- Chase View Radius : distance à laquelle le professeur voit lorsqu'il nous chasse.
+
+- Walk View Angle : Le degré que le professeur voit autour de lui lorsqu'il marche.
+- Chase View Angle : Le degré que le professeur voit autour de lui lorsqu'il nous poursuit.
+
+- Walk Stopping Distance : une variable de test à ne pas prendre en compte.
+- Distance Player Catch : le rayon de la "zone noir" autour du professeur.
+
+- Wandering Wate Time Min : le temps de réaction du professeur avant de faire un déplacement minimum.
+- Wandering Wate Time Max : le temps de réaction du professeur avant de faire un déplacement maximum.
+
+- Wandering Distance Min : distance minimum à laquelle le professeur va lorsqu'il fait un déplacement aléatoire.
+- Wandering Distance Max :distance maximum à laquelle le professeur va lorsqu'il fait un déplacement aléatoire.
